@@ -1,0 +1,2 @@
+# check public rsa github access
+ssh -T -ai ~/.ssh/id_rsa git@github.com
