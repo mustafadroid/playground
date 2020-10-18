@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RocketTask</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://use.fontawesome.com/7a7c00e26d.js"></script>
+</head>
+<body>
+	<h1 style="color: #fff;text-align: center;">MultiTasker</h1>
+	<h2 style="color: #fff;text-align: center;">Desktop & Mobile</h2>
+
+	<div class="view-container">
+
+		<!-- Header -->
+		<header class="clear">
+			<div class="task-group-selector">
+				<div style="width: 30px; height: 30px; margin-top: 10px; margin-left: 10px;border-radius: 50%; background-color: #555; text-align: center; color: #fff; "><br/>T</div>
+			</div>
+			<div class="view-title">
+				<div class="selected-group-label">All task</div>
+				<div>you've 10 tasks todo today</div>
+			</div>
+			<div class="header-more-menu clear">
+				<div style="color: #555;"><i class="fa fa-ellipsis-v"></i></div>
+				<div style="color: #555;"><i class="fa fa-bell"></i></div>
+			</div>
+		</header>
+
+
+		<!-- Desktop Button for add new Task -->
+		<div class="list-control" style="padding: 5px 10px;">
+			<div class="add-task-btn">Add Task</div>
+			<div class="more-control-btn"></div>
+		</div>
+		
+
+		<!-- Task List View -->
+		<ul class="list-view">
+			<li class="clear">
+				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: lightblue; width: 5px; height: 100%;"></span>
+				<div class="task-check">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+				</div>
+				<div class="task-desc">
+					<div class="task-title">Fix bug</div>
+					<div class="task-date">25 Oct 2020</div>
+				</div>
+				<div class="task-edit-legend">
+					<i class="fa fa-edit" aria-hidden="true"></i>
+				</div>
+			</li>
+
+			<li class="clear">
+				<!-- Task Group indicator -->
+				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: lightblue; width: 5px; height: 100%;"></span>
+
+				<!-- Overdue indicator -->
+				<span style="width: 0; height: 0; border-left: 15px solid transparent; border-right: 15px solid transparent; border-bottom: 15px solid red; transform: rotate(45deg); top: -1.5px; right: -9.5px; bottom: 0; position: absolute;"></span>
+				
+				<div class="task-check">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+				</div>
+				<div class="task-desc">
+					<div class="task-title">Code Review</div>
+					<div class="task-date">1 Sep 2020</div>
+				</div>
+				<div class="task-edit-legend">
+					<i class="fa fa-edit" aria-hidden="true"></i>
+				</div>
+			</li>
+			<li class="clear">
+				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: lightblue; width: 5px; height: 100%;"></span>
+				<div class="task-check">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+				</div>
+				<div class="task-desc">
+					<div class="task-title">Fix bug</div>
+					<div class="task-date">25 Oct 2020</div>
+				</div>
+				<div class="task-edit-legend">
+					<i class="fa fa-edit" aria-hidden="true"></i>
+				</div>
+			</li>
+			<li class="clear">
+				<span
+					title="Sub Fix bug"
+					style="top: 0; left: 0; bottom: 0; position: absolute; background-color: lightblue; width: 10px; height: 100%;"></span>
+				<div class="task-check">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+				</div>
+				<div class="task-desc">
+					<div class="task-title">
+						<span style="top: -5px; left: 0; bottom: 0; position: absolute; color: #aaa; font-size: .7em; ">Sub Fix bug</span>
+
+					Helping mom</div>
+					<div class="task-date">23 Oct 2020</div>
+				</div>
+				<div class="task-edit-legend">
+					<i class="fa fa-edit" aria-hidden="true"></i>
+				</div>
+			</li>
+			<li class="clear">
+				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: #888; width: 5px; height: 100%;"></span>
+				<div class="task-check">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+				</div>
+				<div class="task-desc">
+					<div class="task-title">Helping mom</div>
+					<div class="task-date">21 Oct 2020</div>
+				</div>
+				<div class="task-edit-legend">
+					<i class="fa fa-edit" aria-hidden="true"></i>
+				</div>
+			</li>
+			<li class="clear">
+				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: #888; width: 5px; height: 100%;"></span>
+				<div class="task-check">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+				</div>
+				<div class="task-desc">
+					<div class="task-title">Fixing Plum</div>
+					<div class="task-date">21 Oct 2020</div>
+				</div>
+				<div class="task-edit-legend">
+					<i class="fa fa-edit" aria-hidden="true"></i>
+				</div>
+			</li>
+
+			<!-- Editor Sample -->
+			<li class="clear">
+				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: #888; width: 5px; height: 100%;"></span>
+				<div class="task-check">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+				</div>
+				<div class="task-desc">
+					<input type="text" style="width: 95%; display: block; padding: 5px; border: 1px solid #ddd" name="test" value="Edit task" placeholder="Add Edit task">
+					<div class="task-date">1 Nov 2020</div>
+				</div>
+				<div class="task-edit-legend">
+					<i class="fa fa-edit" aria-hidden="true"></i>
+				</div>
+			</li>
+			<li class="clear">
+				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: #888; width: 5px; height: 100%;"></span>
+				<div class="task-check">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+				</div>
+				<div class="task-desc">
+					<input type="text" style="width: 95%; display: block; padding: 5px; border: 1px solid #ddd" name="test" value="New task" placeholder="Add Edit task">
+				</div>
+				<div class="task-edit-legend">
+					<i class="fa fa-edit" aria-hidden="true"></i>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
