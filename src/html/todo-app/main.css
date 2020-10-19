@@ -3,6 +3,9 @@ html {
   font-family: Calibri, helvetica;
   line-height: 1;
 }
+a {
+  color: inherit;
+}
 
 .view-container {
   width: 400px;
@@ -144,6 +147,43 @@ html {
   padding: 5px;
   border-radius: 2.5px;
   font-size: .8em;
+}
+
+.task-group-indicator,
+.task-subgroup-indicator {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #888;
+}
+.task-subgroup-indicator {
+  width: 10px;
+}
+
+.task-footer {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  font-size: .8em;
+  color: #777;
+}
+.task-parent-label{
+  top: -5px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: lightblue;
+  width: 10px;
+  height: 100%;
+}
+.task-tags{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
 }
 
 .clear {

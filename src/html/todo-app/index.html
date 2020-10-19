@@ -22,8 +22,8 @@
 				<div>you've 10 tasks todo today</div>
 			</div>
 			<div class="header-more-menu clear">
-				<div style="color: #555;"><i class="fa fa-ellipsis-v"></i></div>
-				<div style="color: #555;"><i class="fa fa-bell"></i></div>
+				<div style="color: #555;"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
+				<div style="color: #555;"><i class="fa fa-bell" aria-hidden="true"></i></div>
 			</div>
 		</header>
 
@@ -40,7 +40,7 @@
 		<!-- Task List View -->
 		<ul class="list-view">
 			<li class="clear">
-				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: lightblue; width: 5px; height: 100%;"></span>
+				<span class="task-group-indicator" style="background-color:lightblue;"></span>
 				<div class="task-check">
 					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
 				</div>
@@ -49,14 +49,17 @@
 					<div class="task-date">25 Oct 2020</div>
 				</div>
 				<div class="task-edit-legend">
-					<i class="fa fa-edit" aria-hidden="true"></i>
+					<a href="task-detail.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 				</div>
-				<div style="position: absolute; bottom: 5px; right: 20px; font-size: .8em; color: #777;"><span style="width: 10px; height: 10px; background-color: #ff8484; display: block; border-radius: 50%; "> </span></div>
+				<div class="task-footer">
+					<i class="fa fa-arrow-up" title="Priority"></i>
+					<span class="task-tags" style="background-color: #ff8484;"> </span>
+				</div>
 			</li>
 
 			<li class="clear">
 				<!-- Task Group indicator -->
-				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: lightblue; width: 5px; height: 100%;"></span>
+				<span class="task-subgroup-indicator" style="background-color:lightblue;"></span>
 
 				<!-- Overdue indicator -->
 				<span style="width: 0; height: 0; border-left: 15px solid transparent; border-right: 15px solid transparent; border-bottom: 15px solid #555; transform: rotate(45deg); top: -1.5px; right: -9.5px; bottom: 0; position: absolute;"></span>
@@ -69,12 +72,14 @@
 					<div class="task-date">1 Sep 2020</div>
 				</div>
 				<div class="task-edit-legend">
-					<i class="fa fa-edit" aria-hidden="true"></i>
+					<a href="task-detail.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 				</div>
-				<div style="position: absolute; bottom: 5px; right: 20px; font-size: .8em; color: #777;"><span style="width: 10px; height: 10px; background-color: #aaea8a; display: block; border-radius: 50%; "> </span></div>
+				<div class="task-footer">
+					<span class="task-tags" style="background-color: #aaea8a;"> </span>
+				</div>
 			</li>
 			<li class="clear">
-				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: lightblue; width: 5px; height: 100%;"></span>
+				<span class="task-subgroup-indicator" style="background-color:lightblue;"></span>
 				<div class="task-check">
 					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
 				</div>
@@ -83,14 +88,16 @@
 					<div class="task-date">25 Oct 2020</div>
 				</div>
 				<div class="task-edit-legend">
-					<i class="fa fa-edit" aria-hidden="true"></i>
+					<a href="task-detail.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 				</div>
-				<div style="position: absolute; bottom: 5px; right: 20px; font-size: .8em; color: #777;"><span style="width: 10px; height: 10px; background-color: #aaea8a; display: block; border-radius: 50%; "> </span></div>
+				<div class="task-footer">
+					<span class="task-tags" style="background-color: #aaea8a;"> </span>
+				</div>
 			</li>
 			<li class="clear">
 				<span
-					title="Sub Fix bug"
-					style="top: 0; left: 0; bottom: 0; position: absolute; background-color: lightblue; width: 10px; height: 100%;"></span>
+				  class="task-parent-label"
+					title="Sub Fix bug"></span>
 				<div class="task-check">
 					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
 				</div>
@@ -102,12 +109,14 @@
 					<div class="task-date">23 Oct 2020</div>
 				</div>
 				<div class="task-edit-legend">
-					<i class="fa fa-edit" aria-hidden="true"></i>
+					<a href="task-detail.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 				</div>
-				<div style="position: absolute; bottom: 5px; right: 20px; font-size: .8em; color: #777;"><span style="width: 10px; height: 10px; background-color: #84f2ff; display: block; border-radius: 50%; "> </span></div>
+				<div class="task-footer">
+					<span class="task-tags" style="background-color: #84f2ff;"> </span>
+				</div>
 			</li>
 			<li class="clear">
-				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: #888; width: 5px; height: 100%;"></span>
+				<span class="task-group-indicator"></span>
 				<div class="task-check">
 					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
 				</div>
@@ -116,12 +125,15 @@
 					<div class="task-date">21 Oct 2020</div>
 				</div>
 				<div class="task-edit-legend">
-					<i class="fa fa-edit" aria-hidden="true"></i>
+					<a href="task-detail.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 				</div>
-				<div style="position: absolute; bottom: 5px; right: 20px; font-size: .8em; color: #777;"><span style="width: 10px; height: 10px; background-color: #84f2ff; display: block; border-radius: 50%; "> </span></div>
+				<div class="task-footer">
+					<i class="fa fa-arrow-up" title="Priority"></i>
+					<span class="task-tags" style="background-color: #84f2ff;"> </span>
+				</div>
 			</li>
 			<li class="clear">
-				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: #888; width: 10px; height: 100%;"></span>
+				<span class="task-subgroup-indicator" style="background-color: #888;"></span>
 				<div class="task-check">
 					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
 				</div>
@@ -130,12 +142,15 @@
 					<div class="task-date">21 Oct 2020</div>
 				</div>
 				<div class="task-edit-legend">
-					<i class="fa fa-edit" aria-hidden="true"></i>
+					<a href="task-detail.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 				</div>
-				<div style="position: absolute; bottom: 5px; right: 20px; font-size: .8em; color: #777;"><span style="width: 10px; height: 10px; background-color: #ff8484; display: block; border-radius: 50%; "> </span></div>
+				<div class="task-footer">
+					<i class="fa fa-arrow-up" title="Priority"></i>
+					<span class="task-tags" style="background-color: #ff8484;"> </span>
+				</div>
 			</li>
 			<li class="clear">
-				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: #888; width: 10px; height: 100%;"></span>
+				<span class="task-subgroup-indicator" style="background-color: #888;"></span>
 				<div class="task-check">
 					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
 				</div>
@@ -144,14 +159,17 @@
 					<div class="task-date">21 Oct 2020</div>
 				</div>
 				<div class="task-edit-legend">
-					<i class="fa fa-edit" aria-hidden="true"></i>
+					<a href="task-detail.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 				</div>
-				<div style="position: absolute; bottom: 5px; right: 20px; font-size: .8em; color: #777;"><span style="width: 10px; height: 10px; background-color: #555; display: block; border-radius: 50%; "> </span></div>
+				<div class="task-footer">
+					<i class="fa fa-arrow-up" title="Priority"></i>
+					<span class="task-tags" style="background-color: #555;"> </span>
+				</div>
 			</li>
 
 			<!-- Editor Sample -->
 			<li class="clear">
-				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: #888; width: 5px; height: 100%;"></span>
+				<span class="task-group-indicator"></span>
 				<div class="task-check">
 					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
 				</div>
@@ -160,12 +178,15 @@
 					<div class="task-date">1 Nov 2020</div>
 				</div>
 				<div class="task-edit-legend">
-					<i class="fa fa-edit" aria-hidden="true"></i>
+					<a href="task-detail.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 				</div>
-				<div style="position: absolute; bottom: 5px; right: 20px; font-size: .8em; color: #777;"><span style="width: 10px; height: 10px; background-color: #555; display: block; border-radius: 50%; "> </span></div>
+				<div class="task-footer">
+					<i class="fa fa-arrow-up" title="Priority"></i>
+					<span class="task-tags" style="background-color: #555;"> </span>
+				</div>
 			</li>
 			<li class="clear">
-				<span style="top: 0; left: 0; bottom: 0; position: absolute; background-color: #888; width: 5px; height: 100%;"></span>
+				<span class="task-group-indicator"></span>
 				<div class="task-check">
 					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
 				</div>
@@ -173,9 +194,11 @@
 					<input type="text" style="width: 95%; display: block; padding: 5px; border: 1px solid #ddd" name="test" value="New task" placeholder="Add Edit task">
 				</div>
 				<div class="task-edit-legend">
-					<i class="fa fa-edit" aria-hidden="true"></i>
+					<a href="task-detail.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 				</div>
-				<div style="position: absolute; bottom: 5px; right: 20px; font-size: .8em; color: #777;"><span style="width: 10px; height: 10px; background-color: #555; display: block; border-radius: 50%; "> </span></div>
+				<div class="task-footer">
+					<span class="task-tags" style="background-color: #555;"> </span>
+				</div>
 			</li>
 		</ul>
 	</div>
